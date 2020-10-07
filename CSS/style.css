@@ -93,7 +93,7 @@ input[type="checkbox"]:focus{
     border:4px solid #265372;
 }
 textarea:focus{
-    background: #b1fac7;
+    background: #d6e7fc;
     border:3px solid #265372;
 }
 input[type="submit"]:active{
