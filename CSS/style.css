@@ -27,7 +27,6 @@ legend{
 }
 input::placeholder{
     display: inline-block;
-    
     font-family: 'Raleway';
     font-style: italic;
     text-align: right;
@@ -38,10 +37,12 @@ input[type="checkbox"],
 input[type="radio"]{
     padding:10px 10px;
     margin:10px 10px;
+    transition-duration: 500ms;
 }
 input[type="submit"]{
     height:50px;
     width:100%;
+    max-width: 100%;
     border-radius:10px;
     margin-top:20px;
     text-align: center;
@@ -49,14 +50,18 @@ input[type="submit"]{
     font-weight: bold;
     background: #5fcf80;
     color:white;
+    transition-duration: 700ms;
 }
 textarea{
-    width: 100%;
+    width: 97%;
     height:120px;
     border-radius: 10px;
     padding:5px;
+    transition-duration: 500ms;
+    
     background: #eeeeee;
     font-size: 16px;
+    resize:none;
 }
 textarea::placeholder{
     font-family: 'raleway';
@@ -72,14 +77,41 @@ label[for="input"]{
 footer p{
     text-align: center;
 }
+/*----------Focus States and animations---------*/
+input:focus{
+    border:4px solid #265372;
+    
+}
+input[type="radio"]:focus{
+    outline:4px solid  #265372;
+}
+input[type="checkbox"]:focus{
+    outline:4px solid  #265372;
+}
+
+#state:focus{
+    border:4px solid #265372;
+}
+textarea:focus{
+    background: #b1fac7;
+    border:3px solid #265372;
+}
+input[type="submit"]:active{
+    background:  #347447;
+}
+input[type="submit"]:hover{
+
+    background:#b1fac7;
+}
 /*------------------Text styles------*/
-h1,h2,label,legend,input[type="submit"]{
+h1,h2,legend,input[type="submit"]{
     font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-p{
+p, label{
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
+
 /*-------------------Class Styles------------------*/
 .intro{
     text-align: center;
@@ -96,7 +128,7 @@ p{
     margin-top:15px;
     margin-bottom:25px;
     border-radius:10px;
-    
+    transition: 500ms;
     background: #eeeeee;
 }
 .input_field select{
@@ -104,6 +136,7 @@ p{
     height:40px;
     margin-bottom:20px;
     border-radius:10px;
+    transition:500ms;
     background: #eeeeee;
 }
 .form-wrapper{
