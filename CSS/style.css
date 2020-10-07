@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*-------------Mobile Styles-----------------*/
+body{
+    padding:0px;
+    margin-top: 0px;
+}
+header h1{
+    margin-top:auto;
+    padding-top:30px;
+}
+header{
+    height: 100px;
+    text-align: center;
+    background: #265372;
+    color:white;
+}
+fieldset{
+    border:0;
+    
+}
+legend{
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight:bold;
+    
+}
+input::placeholder{
+    display: inline-block;
+    
+    font-family: 'Raleway';
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    
+}
+input[type="checkbox"],
+input[type="radio"]{
+    padding:10px 10px;
+    margin:10px 10px;
+}
+input[type="submit"]{
+    height:50px;
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    background: #5fcf80;
+    color:white;
+}
+textarea{
+    width: 100%;
+    height:120px;
+    border-radius: 10px;
+    padding:5px;
+    background: #eeeeee;
+    font-size: 16px;
+}
+textarea::placeholder{
+    font-family: 'raleway';
+    font-style: italic;
+    font-weight: bold;
+}
+label[for="input"]{
+    display: inline-block;
+    margin:15px 0 10px 0;
+    max-width: 50%;
+}
+
+footer p{
+    text-align: center;
+}
+/*------------------Text styles------*/
+h1,h2,label,legend,input[type="submit"]{
+    font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+/*-------------------Class Styles------------------*/
+.intro{
+    text-align: center;
+    border-bottom: 4px double black;
+}
+
+.content-wrapper{
+    width:95%;
+    margin:auto;
+}
+.input_field input{
+    width:100%;
+    height:40px;
+    margin-top:15px;
+    margin-bottom:25px;
+    border-radius:10px;
+    
+    background: #eeeeee;
+}
+.input_field select{
+    width:100%;
+    height:40px;
+    margin-bottom:20px;
+    border-radius:10px;
+    background: #eeeeee;
+}
+.form-wrapper{
+    margin:auto;
+    background: #e4f0f5;
+    border-radius:20px;
+    margin-top:10px;
+}
+.section1{
+    border-bottom: 2px solid black;
+}
+@media(min-width:768px){
+.form-wrapper, .content-wrapper{
+    max-width: 700px;
+    margin:auto;
+    margin-top:10px;
+}
+
+.input_field{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+.input_field input{
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+.input_field select{
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+
+label{
+    flex-basis: 30%;
+    max-width: 20%;
+    
+}
+#zip{
+    max-width: 30%;
+}
+
+}
